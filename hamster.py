@@ -1,6 +1,6 @@
 # https://github.com/xhdndmm/hamster
 # src/main.py
-# v1.0_beta
+# v1.0
 
 import cv2
 import logging
@@ -202,7 +202,7 @@ def web():
     def get_img(name):
         return send_from_directory(img_path, name)
 
-    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True, use_reloader=False)
+    app.run(host="0.0.0.0", port=5000, debug=False, threaded=True, use_reloader=False)
 
 # 后端计算
 def compute():
